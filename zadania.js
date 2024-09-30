@@ -49,7 +49,6 @@ function helloWorld() {
         function promisesRace() {
             const promise1 = new Promise((resolve) => setTimeout(() => resolve('Promise 1 won'), 2000));
             const promise2 = new Promise((resolve) => setTimeout(() => resolve('Promise 2 won'), 1000));
-          
             return Promise.race([promise1, promise2]);
           }
           promisesRace()
